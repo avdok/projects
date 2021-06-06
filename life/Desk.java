@@ -60,7 +60,7 @@ public class Desk implements Constants {
 
     private boolean sellIsOkAndTrue(int i, int j) {
     
-        if ( (i >= 0 & i <= field.length) & ( j >= 0 & j <= field[i].length) ) {
+        if ( (i >= 0 & i < field.length) && ( j >= 0 & j < field[i].length) ) {
             // индексы не выходят за границы поля. возвращаем значение клетки
             return field[i][j];
         } else {
