@@ -1,5 +1,5 @@
 interface Constants {
 
-	int size = 100;
+	int size = 20;
 
 }
