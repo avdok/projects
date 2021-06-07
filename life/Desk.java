@@ -48,6 +48,11 @@ public class Desk implements Constants {
         
         for (int d = -1; d < 2; d++) {
             for (int k = -1; k < 2; k++) {
+                if ( (d == 0) & (k == 0) ) {
+                    continue;
+                }
+                //System.out.println("for i " + i + " j " + j);
+                //System.out.println("d = " + d + " k = " + k);
                 if  (sellIsOkAndTrue(i + d,j + k)) {
                     res++;
                 }
